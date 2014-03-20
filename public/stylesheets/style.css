@@ -1,0 +1,39 @@
+body {
+  font: 16px "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background: #ececec;
+}
+a {
+  color: #00b7ff;
+}
+#messages {
+  margin-left: 35%;
+  margin-bottom: 100px;
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
+}
+#chatBar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background: #666;
+  left: 26%;
+  padding-top: 10px;
+}
+#chatBar div {
+  padding: 20px;
+}
+.bubble {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  border-right: 1px solid #666;
+}

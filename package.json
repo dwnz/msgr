@@ -1,0 +1,18 @@
+{
+  "name": "msgr",
+  "version": "0.0.0",
+  "description": "msgr",
+  "main": "app.js",
+  "author": {
+    "name": "daniel.wylie",
+    "email": ""
+  },
+  "dependencies": {
+    "connect": "2.7.1",
+    "express": "3.0.x",
+    "ejs": "0.8.x",
+    "session.socket.io": "0.1.x",
+    "socket.io": "0.9.x",
+	"stylus": "*"
+  }
+}

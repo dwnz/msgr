@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>msgr</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+
+	<link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+
+  	<div class="row">
+  		<div class="col-md-3 hidden-xs hidden-sm sidebar">
+  			<h4>Online now</h4>
+  		</div>
+
+  		<div class="col-md-9 col-sm-12">
+			<div class="row" id="messages">
+				<div class="col-md-12" id="list"></div>
+			</div>
+
+			<div class="row" id="chatBar">
+				<div class="col-md-12">
+					<input type="text" id="Message" class="form-control input-lg" placeholder="Your message">
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="modal fade" id="welcomepopup">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Hey! Haven't seen you around before...</h4>
+				</div>
+
+				<div class="modal-body">
+					<input type="text" id="Nickname" placeholder="Your nickname" class="form-control input-lg" />
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" onclick="app.setupNickname()">Save changes</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src='/socket.io/socket.io.js'></script>
+	<script src='/js/app.js'></script>
+  </body>
+</html>
